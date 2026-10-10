@@ -1,0 +1,2220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>2COLD // MONEY MISSION MILITARY RECORDS // OFFICIAL PORTAL</title>
+  <meta name="description" content="The official website of 2Cold and Money Mission Military Records (C-Corp). Stream 'Ungrateful', watch official music videos and vertical teasers, tour dates, and official tactical merchandise.">
+  <link rel="canonical" href="https://moneymissionmilitary.com">
+  
+  <!-- OpenGraph / Social Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://moneymissionmilitary.com/">
+  <meta property="og:title" content="2COLD // MONEY MISSION MILITARY RECORDS">
+  <meta property="og:description" content="Stream 'Ungrateful' out now worldwide. Official videos, campaign roadmap, tour dates, and tactical store.">
+  <meta property="og:image" content="https://moneymissionmilitary.com/hero_16x9.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="moneymissionmilitary.com">
+  <meta property="twitter:url" content="https://moneymissionmilitary.com/">
+  <meta property="twitter:title" content="2COLD // MONEY MISSION MILITARY RECORDS">
+  <meta property="twitter:description" content="Official Portal of 2Cold. Stream 'Ungrateful', video vault, and tour dates.">
+  <meta property="twitter:image" content="https://moneymissionmilitary.com/hero_16x9.jpg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,800;1,900&family=JetBrains+Mono:wght@500;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #030508;
+      --card-bg: #090c13;
+      --card-border: rgba(255, 255, 255, 0.1);
+      --border: rgba(255, 255, 255, 0.12);
+      --cyan: #00e5ff;
+      --cyan-glow: rgba(0, 229, 255, 0.35);
+      --lime: #a3e635;
+      --lime-glow: rgba(163, 230, 53, 0.3);
+      --text: #ffffff;
+      --text-muted: #94a3b8;
+      --accent-red: #ef4444;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      width: 100%;
+      max-width: 100vw;
+    }
+
+    img, video {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ==========================================================
+       TOP STICKY NAVIGATION BAR
+       ========================================================== */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(3, 5, 8, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 14px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: padding 0.2s ease;
+    }
+
+    .nav-logo-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .nav-logo-img {
+      height: 34px;
+      width: auto;
+      filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
+    }
+
+    .nav-logo-text {
+      font-size: 20px;
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .nav-logo-text span {
+      color: var(--cyan);
+    }
+
+    .nav-logo-sub {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: #94a3b8;
+      letter-spacing: 0.18em;
+      font-weight: 700;
+      border-left: 1px solid rgba(255, 255, 255, 0.18);
+      padding-left: 12px;
+      margin-left: 4px;
+      text-transform: uppercase;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: var(--cyan);
+    }
+
+    .nav-right-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-nav-ticket {
+      background: var(--cyan);
+      color: #000;
+      padding: 8px 18px;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .btn-nav-ticket:hover {
+      background: #38bdf8;
+      box-shadow: 0 0 16px var(--cyan-glow);
+      transform: translateY(-1px);
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+    }
+
+    /* Mobile Quick-Jump Subnav Bar */
+    .mobile-quick-nav {
+      display: none;
+      background: rgba(8, 11, 18, 0.98);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 8px 16px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .mobile-quick-nav::-webkit-scrollbar {
+      display: none;
+    }
+    .mobile-quick-nav a {
+      display: inline-block;
+      color: #cbd5e1;
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      margin-right: 6px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .mobile-quick-nav a:hover, .mobile-quick-nav a.active {
+      color: var(--cyan);
+      border-color: var(--cyan);
+      background: rgba(0, 229, 255, 0.12);
+    }
+
+    @media (max-width: 1040px) {
+      .nav-logo-sub { display: none; }
+      .nav-menu { gap: 14px; }
+      .nav-link { font-size: 10px; }
+    }
+
+    @media (max-width: 860px) {
+      .nav-menu { display: none; }
+      .mobile-quick-nav { display: flex; }
+      .top-nav { padding: 12px 16px; }
+      .btn-nav-ticket { padding: 6px 12px; font-size: 10px; }
+    }
+
+    /* ==========================================================
+       HERO BANNER SECTION
+       ========================================================== */
+    .hero-banner {
+      position: relative;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 16px 80px;
+      background: linear-gradient(180deg, rgba(3, 5, 8, 0.82) 0%, rgba(3, 5, 8, 0.95) 75%, #030508 100%), url('/hero_16x9.jpg') center/cover no-repeat;
+    }
+
+    .hero-content {
+      max-width: 880px;
+      width: 100%;
+      margin: 0 auto;
+      z-index: 10;
+      padding: 0 10px;
+    }
+
+    .hero-avatar-wrap {
+      width: clamp(160px, 24vw, 220px);
+      height: clamp(160px, 24vw, 220px);
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid rgba(0, 229, 255, 0.4);
+      box-shadow: 0 0 45px rgba(0, 229, 255, 0.22), 0 20px 40px rgba(0, 0, 0, 0.9);
+      position: relative;
+    }
+
+    .hero-avatar-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+    }
+
+    .hero-insignia-img {
+      max-width: clamp(160px, 25vw, 210px);
+      height: auto;
+      margin: 0 auto 12px;
+      filter: drop-shadow(0 12px 28px rgba(0, 229, 255, 0.22));
+    }
+
+    .hero-badge {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: clamp(10px, 2.2vw, 11px);
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      background: rgba(40, 55, 30, 0.85);
+      color: var(--lime);
+      border: 1px solid #4a6333;
+      padding: 6px 16px;
+      border-radius: 30px;
+      margin-bottom: 12px;
+      max-width: 95%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-title {
+      font-size: clamp(42px, 9vw, 92px);
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      line-height: 0.95;
+      margin-bottom: 6px;
+      color: #fff;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+    }
+
+    /* THE PILL BOX: FIXED WRAPPING AND BROKEN DIVIDERS */
+    .hero-release-pill-box {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      background: rgba(10, 14, 22, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 10px 22px;
+      border-radius: 40px;
+      margin: 12px auto 26px auto;
+      max-width: 95%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-release-pill-box .release-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-release-pill-box .release-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      background: rgba(163, 230, 53, 0.15);
+      color: var(--lime);
+      border: 1px solid rgba(163, 230, 53, 0.4);
+      padding: 3px 9px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .hero-release-pill-box .release-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      white-space: nowrap;
+    }
+
+    .hero-release-pill-box .release-divider {
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 14px;
+    }
+
+    .hero-release-pill-box .release-status {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      color: var(--cyan);
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 640px) {
+      .hero-release-pill-box {
+        flex-direction: column;
+        gap: 8px;
+        padding: 14px 18px;
+        border-radius: 16px;
+        width: 100%;
+        max-width: 340px;
+      }
+      .hero-release-pill-box .release-divider {
+        display: none;
+      }
+      .hero-release-pill-box .release-item {
+        justify-content: center;
+      }
+    }
+
+    .hero-cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn-hero-primary {
+      background: #fff;
+      color: #000;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-hero-primary:hover {
+      background: var(--cyan);
+      transform: translateY(-2px);
+      box-shadow: 0 0 25px var(--cyan-glow);
+    }
+
+    .btn-hero-secondary {
+      background: transparent;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-hero-secondary:hover {
+      border-color: #fff;
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .hero-cta-group {
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      .btn-hero-primary, .btn-hero-secondary {
+        width: 100%;
+        padding: 14px 20px;
+      }
+    }
+
+    /* ==========================================================
+       DSP STREAMING PLATFORM BAR
+       ========================================================== */
+    .stream-bar {
+      background: #06090e;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+    }
+
+    .stream-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .stream-brand {
+      color: #94a3b8;
+      text-decoration: none;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+      padding: 4px 8px;
+    }
+
+    .stream-brand:hover {
+      color: var(--cyan);
+    }
+
+    @media (max-width: 680px) {
+      .stream-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        text-align: center;
+      }
+      .stream-brand {
+        font-size: 10px;
+        letter-spacing: 0.08em;
+      }
+    }
+
+    /* ==========================================================
+       SECTION COMMONS
+       ========================================================== */
+    .section-wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    @media (max-width: 768px) {
+      .section-wrap {
+        padding: 50px 16px;
+      }
+    }
+
+    .section-header-block {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      background: rgba(0, 229, 255, 0.1);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+
+    .section-main-title {
+      font-size: clamp(28px, 5vw, 46px);
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: -0.03em;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .section-desc {
+      color: #94a3b8;
+      max-width: 640px;
+      margin: 12px auto 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ==========================================================
+       FEATURED SINGLE / ALBUM SECTION (#music)
+       ========================================================== */
+    .featured-release-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    @media (max-width: 800px) {
+      .featured-release-grid {
+        grid-template-columns: 1fr;
+        padding: 24px 18px;
+        gap: 28px;
+      }
+    }
+
+    .release-art-box {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      aspect-ratio: 1 / 1;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #10141d;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 229, 255, 0.12);
+    }
+
+    .release-art-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .release-info h3 {
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: 900;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .release-info p {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+
+    .track-list-table {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    .track-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      gap: 12px;
+    }
+
+    .track-name {
+      color: #f1f5f9;
+      font-weight: 700;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .track-time {
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    .release-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* ==========================================================
+       CAMPAIGN ROADMAP: SEED -> SPROUT -> BLOOM
+       ========================================================== */
+    .roadmap-track {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .roadmap-card {
+      background: rgba(12, 16, 24, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(12px);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .roadmap-card.active {
+      border-color: var(--lime);
+      box-shadow: 0 0 25px rgba(163, 230, 53, 0.15);
+      background: rgba(20, 28, 18, 0.75);
+    }
+
+    .roadmap-card.locked {
+      opacity: 0.75;
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .roadmap-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .roadmap-status-badge {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      align-self: flex-start;
+    }
+
+    .roadmap-status-badge.active {
+      background: rgba(163, 230, 53, 0.2);
+      color: var(--lime);
+      border: 1px solid var(--lime);
+    }
+
+    .roadmap-status-badge.locked {
+      background: rgba(255, 255, 255, 0.06);
+      color: #94a3b8;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .roadmap-icon {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .roadmap-stage {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--cyan);
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+
+    .roadmap-title {
+      font-size: 18px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    .roadmap-desc {
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .roadmap-metric {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.5);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 10px;
+    }
+
+    /* ==========================================================
+       INTERACTIVE LYRIC CARDS ENGINE (#lyric-cards)
+       ========================================================== */
+    .lyric-generator-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 860px) {
+      .lyric-generator-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+
+    .lyric-quotes-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .lyric-quote-btn {
+      background: rgba(12, 16, 24, 0.65);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 16px 20px;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+
+    .lyric-quote-btn:hover {
+      border-color: var(--cyan);
+      background: rgba(0, 229, 255, 0.08);
+      transform: translateX(4px);
+    }
+
+    .lyric-quote-btn.active {
+      border-color: var(--cyan);
+      background: rgba(0, 229, 255, 0.12);
+      box-shadow: 0 4px 18px rgba(0, 229, 255, 0.15);
+    }
+
+    .quote-bar-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--lime);
+      letter-spacing: 0.12em;
+      margin-bottom: 4px;
+    }
+
+    .quote-bar-text {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+    .lyric-preview-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .lyric-card-preview {
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 9 / 16;
+      background: linear-gradient(180deg, #04070a 0%, #0c131a 50%, #030508 100%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 20px;
+      padding: 28px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 229, 255, 0.15);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-brand-top {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      color: var(--lime);
+      text-transform: uppercase;
+    }
+
+    .card-track-sub {
+      font-size: 12px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .card-big-quote {
+      font-size: clamp(15px, 3.8vw, 18px);
+      font-weight: 800;
+      line-height: 1.45;
+      color: #ffffff;
+      font-style: italic;
+      position: relative;
+      margin: auto 0;
+      padding: 0 8px;
+    }
+
+    .card-big-quote::before {
+      content: '“';
+      display: block;
+      font-size: 46px;
+      color: var(--cyan);
+      line-height: 1;
+      margin-bottom: 6px;
+      opacity: 0.6;
+    }
+
+    .card-brand-bottom {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      font-weight: 800;
+      color: var(--cyan);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .btn-download-lyric {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--cyan);
+      color: #000;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      padding: 14px 26px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+      box-shadow: 0 6px 20px rgba(0, 229, 255, 0.3);
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .btn-download-lyric:hover {
+      background: #fff;
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================
+       UGC FAN CHALLENGE (#UNGRATEFULCHALLENGE)
+       ========================================================== */
+    .challenge-banner-box {
+      background: linear-gradient(135deg, rgba(20, 26, 38, 0.85) 0%, rgba(10, 14, 22, 0.95) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 20px;
+      padding: 36px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: center;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    }
+
+    @media (max-width: 850px) {
+      .challenge-banner-box {
+        grid-template-columns: 1fr;
+        padding: 24px 18px;
+        text-align: center;
+      }
+      .challenge-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    .challenge-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 850px) {
+      .challenge-actions {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+
+    .btn-challenge-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #fff;
+      color: #000;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 12px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+    }
+
+    .btn-challenge-primary:hover {
+      background: var(--lime);
+      transform: translateY(-2px);
+    }
+
+    .btn-challenge-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 12px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+    }
+
+    .btn-challenge-secondary:hover {
+      background: var(--cyan);
+      color: #000;
+      border-color: var(--cyan);
+      transform: translateY(-2px);
+    }
+
+    .challenge-asset-visual {
+      display: flex;
+      justify-content: center;
+    }
+
+    .challenge-asset-visual img {
+      width: 100%;
+      max-width: 260px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* ==========================================================
+       EXECUTIVE VIDEO VAULT & THEATER PLAYER (#videos)
+       ========================================================== */
+    .video-theater-wrapper {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 40px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85);
+    }
+
+    .theater-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(8, 11, 16, 0.95);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 12px 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .theater-status-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .theater-status-tag .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--cyan);
+      box-shadow: 0 0 10px var(--cyan);
+      animation: pulseGlow 1.8s infinite;
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.85); }
+    }
+
+    .theater-tab-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .theater-tab-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #94a3b8;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .theater-tab-btn:hover {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .theater-tab-btn.active {
+      background: var(--cyan);
+      color: #000;
+      border-color: var(--cyan);
+      font-weight: 800;
+      box-shadow: 0 0 14px var(--cyan-glow);
+    }
+
+    /* THEATER SCREEN STAGE */
+    .theater-stage-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .theater-view-pane {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+
+    .theater-view-pane.active {
+      display: block;
+    }
+
+    .theater-view-pane iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    /* THEATER HTML5 VIDEO (CORRECTLY SIZED TO 16:9 THEATER) */
+    .theater-view-pane video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      background: #000;
+      display: block;
+    }
+
+    /* 9:16 VERTICAL REELS & TEASERS VAULT */
+    .reels-section-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      color: var(--lime);
+      text-transform: uppercase;
+      margin: 36px 0 18px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .reels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: 24px;
+      margin-top: 15px;
+    }
+
+    .reel-card {
+      background: rgba(13, 17, 25, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      backdrop-filter: blur(12px);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .reel-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--cyan);
+      box-shadow: 0 16px 36px rgba(0, 229, 255, 0.18);
+    }
+
+    /* PRECISE 9:16 CONTAINER FOR VERTICAL ASSETS */
+    .reel-media-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .reel-media-wrap video, .reel-media-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .reel-badge-overlay {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(8, 10, 15, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 800;
+      color: #fff;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      backdrop-filter: blur(8px);
+      z-index: 2;
+    }
+
+    .reel-info-bar {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .reel-title {
+      font-size: 16px;
+      font-weight: 800;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: -0.01em;
+    }
+
+    .reel-desc {
+      font-size: 12px;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+
+    .reel-action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      margin-top: 6px;
+    }
+
+    .reel-action-btn:hover {
+      background: var(--cyan);
+      color: #000;
+      border-color: var(--cyan);
+    }
+
+    /* ==========================================================
+       TOUR SECTION - ROBUST RESPONSIVE CARDS
+       ========================================================== */
+    .tour-table {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .tour-row {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      display: grid;
+      grid-template-columns: 160px 1.2fr 1.2fr 150px;
+      align-items: center;
+      padding: 20px 24px;
+      gap: 16px;
+      transition: all 0.2s ease;
+    }
+
+    .tour-row:hover {
+      background: rgba(16, 22, 34, 0.9);
+      border-color: rgba(0, 229, 255, 0.35);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    }
+
+    .tour-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--lime);
+      letter-spacing: 0.1em;
+    }
+
+    .tour-city {
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    .tour-venue {
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .btn-ticket {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 10px 16px;
+      border-radius: 4px;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .btn-ticket:hover {
+      background: #fff;
+      color: #000;
+      border-color: #fff;
+    }
+
+    @media (max-width: 860px) {
+      .tour-row {
+        grid-template-columns: 1fr;
+        padding: 20px 16px;
+        gap: 10px;
+        text-align: left;
+      }
+      .btn-ticket {
+        margin-top: 8px;
+        width: 100%;
+        display: block;
+      }
+    }
+
+    /* ==========================================================
+       MERCHANDISE STORE GRID
+       ========================================================== */
+    .merch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+      gap: 26px;
+    }
+
+    .merch-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .merch-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--cyan);
+    }
+
+    .merch-image-box {
+      width: 100%;
+      height: 240px;
+      border-radius: 10px;
+      background: #07090f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 20px;
+    }
+
+    .merch-image-box img {
+      max-height: 140px;
+      width: auto;
+      filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.8));
+    }
+
+    .merch-title {
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      color: #fff;
+    }
+
+    .merch-price {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      color: var(--cyan);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .btn-buy-merch {
+      display: block;
+      width: 100%;
+      background: #fff;
+      color: #000;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+    }
+
+    .btn-buy-merch:hover {
+      background: var(--cyan);
+    }
+
+    /* ==========================================================
+       BOOKING DESK & VIP FAN SUBSCRIBE
+       ========================================================== */
+    .booking-desk {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 36px;
+      max-width: 720px;
+      margin: 0 auto;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    @media (max-width: 600px) {
+      .booking-desk {
+        padding: 24px 16px;
+      }
+    }
+
+    .booking-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 680px) {
+      .booking-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .booking-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .booking-group.span-2 {
+      grid-column: span 2;
+    }
+
+    @media (max-width: 680px) {
+      .booking-group.span-2 {
+        grid-column: span 1;
+      }
+    }
+
+    .field-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .field-input, .field-select, .field-area {
+      background: #000;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 4px;
+      padding: 12px 14px;
+      color: #fff;
+      font-size: 13px;
+      font-family: 'Montserrat', sans-serif;
+      outline: none;
+      width: 100%;
+    }
+
+    .field-input:focus, .field-select:focus, .field-area:focus {
+      border-color: var(--cyan);
+    }
+
+    .btn-submit-inquiry {
+      width: 100%;
+      background: var(--cyan);
+      color: #000;
+      border: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-submit-inquiry:hover {
+      background: #38bdf8;
+      box-shadow: 0 0 20px var(--cyan-glow);
+    }
+
+    /* VIP INNER CIRCLE */
+    .vip-subscribe-box {
+      text-align: center;
+      background: radial-gradient(circle at 50% 50%, rgba(0, 229, 255, 0.08) 0%, transparent 80%), #090c13;
+      border: 1px solid rgba(0, 229, 255, 0.25);
+      border-radius: 16px;
+      padding: 50px 24px;
+      margin-top: 60px;
+    }
+
+    .vip-form {
+      display: flex;
+      max-width: 480px;
+      margin: 24px auto 0;
+      gap: 8px;
+    }
+
+    @media (max-width: 520px) {
+      .vip-form {
+        flex-direction: column;
+      }
+    }
+
+    .vip-input {
+      flex: 1;
+      background: #000;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      padding: 14px 18px;
+      color: #fff;
+      font-size: 13px;
+      outline: none;
+    }
+
+    .vip-btn {
+      background: #fff;
+      color: #000;
+      border: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 24px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .vip-btn:hover {
+      background: var(--cyan);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 45px 20px;
+      text-align: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      color: #64748b;
+      text-transform: uppercase;
+      line-height: 1.8;
+    }
+
+    footer a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover {
+      color: var(--cyan);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP STICKY MAJOR-LABEL NAV -->
+  <header>
+    <nav class="top-nav">
+      <a href="#" class="nav-logo-box">
+        <img src="/logo_money_mission.png" alt="Money Mission Military Logo" class="nav-logo-img">
+        <span class="nav-logo-text">2COLD</span>
+        <span class="nav-logo-sub">MONEY MISSION MILITARY</span>
+      </a>
+
+      <div class="nav-menu">
+        <a href="#music" class="nav-link">Music</a>
+        <a href="#campaign-roadmap" class="nav-link">Evolution</a>
+        <a href="#lyric-cards" class="nav-link">Quotes</a>
+        <a href="#challenge" class="nav-link">Challenge</a>
+        <a href="#videos" class="nav-link">Videos</a>
+        <a href="#tour" class="nav-link">Tour</a>
+        <a href="#merch" class="nav-link">Store</a>
+        <a href="#booking" class="nav-link">Booking</a>
+      </div>
+
+      <div class="nav-right-actions">
+        <a href="#tour" class="btn-nav-ticket">Live Dates</a>
+      </div>
+    </nav>
+
+    <!-- MOBILE QUICK-JUMP SUBNAV -->
+    <div class="mobile-quick-nav">
+      <a href="#music">Music</a>
+      <a href="#videos">Teaser & Videos</a>
+      <a href="#campaign-roadmap">Evolution</a>
+      <a href="#lyric-cards">Lyric Cards</a>
+      <a href="#challenge">#Challenge</a>
+      <a href="#tour">Tour</a>
+      <a href="#merch">Store</a>
+      <a href="#booking">Booking</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-banner">
+    <div class="hero-content">
+      <div class="hero-avatar-wrap">
+        <img src="/avatar_2cold.jpg" alt="2Cold Official Portrait">
+      </div>
+
+      <div style="display:flex;justify-content:center;">
+        <img src="/logo_money_mission.png" alt="Money Mission Military Records" class="hero-insignia-img">
+      </div>
+
+      <div class="hero-badge">OFFICIAL IMPRINT // MONEY MISSION MILITARY RECORDS · FALL 2026</div>
+      
+      <h1 class="hero-title">2COLD</h1>
+
+      <!-- FIXED HERO PILL BOX (ZERO OVERFLOW / CLEAN MOBILE STACK) -->
+      <div class="hero-release-pill-box">
+        <div class="release-item">
+          <span class="release-tag">NEW PROJECT</span>
+          <span class="release-title">"PLANTING THE SEED"</span>
+        </div>
+        <div class="release-divider">•</div>
+        <div class="release-item">
+          <span class="release-tag" style="background:rgba(0,229,255,0.12);color:var(--cyan);border-color:rgba(0,229,255,0.4);">LEAD SINGLE</span>
+          <span class="release-title">"UNGRATEFUL"</span>
+        </div>
+        <div class="release-divider">•</div>
+        <div class="release-status">OUT NOW EVERYWHERE</div>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="https://music.apple.com/us/album/ungrateful-single/6816070240" target="_blank" class="btn-hero-primary">Listen on Apple Music</a>
+        <a href="https://open.spotify.com/search/2Cold%20Ungrateful" target="_blank" class="btn-hero-secondary">Listen on Spotify</a>
+        <a href="#videos" class="btn-hero-secondary">Watch Music Video</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STREAMING HUB BAR -->
+  <div class="stream-bar">
+    <div class="stream-container">
+      <a href="https://music.apple.com/us/album/ungrateful-single/6816070240" target="_blank" class="stream-brand">Apple Music</a>
+      <a href="https://open.spotify.com/search/2Cold%20Ungrateful" target="_blank" class="stream-brand">Spotify</a>
+      <a href="https://youtu.be/1tnm59_OUBw" target="_blank" class="stream-brand">YouTube Music</a>
+      <a href="https://www.youtube.com/@official2cold" target="_blank" class="stream-brand">Official YouTube</a>
+      <a href="https://tiktok.com/@2coldofficalpage" target="_blank" class="stream-brand">TikTok</a>
+      <a href="https://instagram.com/2coldofficialpage" target="_blank" class="stream-brand">Instagram</a>
+    </div>
+  </div>
+
+  <!-- MUSIC SECTION -->
+  <section class="section-wrap" id="music">
+    <div class="section-header-block">
+      <div class="section-tag">Official Discography</div>
+      <h2 class="section-main-title">Featured Music</h2>
+    </div>
+
+    <div class="featured-release-grid">
+      <div class="release-art-box">
+        <img src="/release_tile_1x1.jpg" alt="Ungrateful Single Artwork">
+      </div>
+      <div class="release-info">
+        <div class="section-tag">NEW SINGLE // 2026</div>
+        <h3>"UNGRATEFUL"</h3>
+        <p>The hard-hitting new anthem from 2Cold, addressing loyalty, street pressure, and gratitude in a world full of noise.</p>
+        
+        <div class="track-list-table">
+          <div class="track-row">
+            <span class="track-name">01. Ungrateful (Explicit)</span>
+            <span class="track-time">2:45</span>
+          </div>
+          <div class="track-row">
+            <span class="track-name">02. Remind Me Of My Mama</span>
+            <span class="track-time">3:12</span>
+          </div>
+          <div class="track-row">
+            <span class="track-name">03. Money Count</span>
+            <span class="track-time">2:58</span>
+          </div>
+        </div>
+
+        <div class="release-actions">
+          <a href="https://music.apple.com/us/album/ungrateful-single/6816070240" target="_blank" class="btn-hero-primary">Stream Single</a>
+          <a href="#videos" class="btn-hero-secondary">Watch Video</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAMPAIGN EVOLUTION ROADMAP -->
+  <section class="section-wrap" id="campaign-roadmap" style="padding-top: 20px; padding-bottom: 40px;">
+    <div class="section-header-block">
+      <div class="section-tag" style="background:rgba(163,230,53,0.12);color:var(--lime);border-color:rgba(163,230,53,0.4);">Campaign Evolution</div>
+      <h2 class="section-main-title">The "Planting The Seed" Rollout</h2>
+      <p class="section-desc">
+        Track the living growth of 2Cold's 2026 campaign. As each streaming milestone is reached, new music, raw studio cuts, and campaign vlogs unlock for the fanbase.
+      </p>
+    </div>
+
+    <div class="roadmap-track">
+      <!-- STAGE 01: THE SEED -->
+      <div class="roadmap-card active">
+        <div class="roadmap-status-badge active">● ACTIVE NOW</div>
+        <div class="roadmap-icon">🌱</div>
+        <div class="roadmap-stage">PHASE 01 // THE SEED</div>
+        <div class="roadmap-title">Underground Germination</div>
+        <div class="roadmap-desc">Lead anthem "UNGRATEFUL" planted worldwide. Regional ad blitz deployed across Arkansas, Atlanta, Texas, and Memphis.</div>
+        <div class="roadmap-metric">Status: Planted Worldwide</div>
+      </div>
+
+      <!-- STAGE 02: THE SPROUT -->
+      <div class="roadmap-card locked">
+        <div class="roadmap-status-badge locked">🔒 UNLOCKS AT 50K STREAMS</div>
+        <div class="roadmap-icon">🌿</div>
+        <div class="roadmap-stage">PHASE 02 // THE SPROUT</div>
+        <div class="roadmap-title">First Growth & Vlog Premiere</div>
+        <div class="roadmap-desc">Unlocks exclusive unreleased audio snippet "Trials & Tribulations" + full Dallas Vlog Part 2 premiere.</div>
+        <div class="roadmap-metric">Goal: 50,000 Global Streams</div>
+      </div>
+
+      <!-- STAGE 03: THE BLOOM -->
+      <div class="roadmap-card locked">
+        <div class="roadmap-status-badge locked">🔒 UPCOMING FALL 2026</div>
+        <div class="roadmap-icon">🌾</div>
+        <div class="roadmap-stage">PHASE 03 // THE BLOOM</div>
+        <div class="roadmap-title">Full Project & Headline Tour</div>
+        <div class="roadmap-desc">The complete "PLANTING THE SEED" project drops on all DSPs with official Money Mission headline show dates.</div>
+        <div class="roadmap-metric">The Harvest Worldwide</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE LYRIC CARD GENERATOR -->
+  <section class="section-wrap" id="lyric-cards" style="padding-top: 10px; padding-bottom: 50px;">
+    <div class="section-header-block">
+      <div class="section-tag" style="background:rgba(0,229,255,0.12);color:var(--cyan);border-color:rgba(0,229,255,0.4);">Street Quotables</div>
+      <h2 class="section-main-title">Shareable Lyric Cards</h2>
+      <p class="section-desc">
+        Tap any hard-hitting bar from "Ungrateful" below to generate a branded 9:16 story card to save to your camera roll and share on Instagram, TikTok, or X.
+      </p>
+    </div>
+
+    <div class="lyric-generator-grid">
+      <!-- QUOTE SELECTOR LIST -->
+      <div class="lyric-quotes-list">
+        <div class="lyric-quote-btn active" onclick="selectLyricQuote(0)">
+          <div class="quote-bar-num">BAR 01</div>
+          <div class="quote-bar-text">"Gave this ungrateful ass nigga half my plate, still got his hands out."</div>
+        </div>
+        <div class="lyric-quote-btn" onclick="selectLyricQuote(1)">
+          <div class="quote-bar-num">BAR 02</div>
+          <div class="quote-bar-text">"This rap shit just a hobby, I'm a hustler I bet I figure it out."</div>
+        </div>
+        <div class="lyric-quote-btn" onclick="selectLyricQuote(2)">
+          <div class="quote-bar-num">BAR 03</div>
+          <div class="quote-bar-text">"Lonely nights just me, my pen and paper plotting the plan out."</div>
+        </div>
+        <div class="lyric-quote-btn" onclick="selectLyricQuote(3)">
+          <div class="quote-bar-num">BAR 04</div>
+          <div class="quote-bar-text">"Ain't fucked up bout no beef, like a vegetarian I'm straight."</div>
+        </div>
+        <div class="lyric-quote-btn" onclick="selectLyricQuote(4)">
+          <div class="quote-bar-num">BAR 05</div>
+          <div class="quote-bar-text">"He brainwashed tryna be tough, but he still ain't got no money."</div>
+        </div>
+      </div>
+
+      <!-- PREVIEW & DOWNLOAD BOX -->
+      <div class="lyric-preview-box">
+        <div class="lyric-card-preview" id="lyricCardPreview">
+          <div class="card-brand-top">MONEY MISSION MILITARY</div>
+          <div class="card-track-sub">2COLD • "UNGRATEFUL"</div>
+          <div class="card-big-quote" id="previewQuoteText">"Gave this ungrateful ass nigga half my plate, still got his hands out."</div>
+          <div class="card-brand-bottom">STREAM "UNGRATEFUL" OUT NOW</div>
+        </div>
+        <button class="btn-download-lyric" onclick="downloadCurrentLyricCard()">
+          <span>📥</span> Download 9:16 Story Card
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- UGC FAN CHALLENGE -->
+  <section class="section-wrap" id="challenge" style="padding-top: 10px; padding-bottom: 50px;">
+    <div class="challenge-banner-box">
+      <div class="challenge-content">
+        <div class="section-tag" style="background:rgba(239,68,68,0.15);color:#f87171;border-color:rgba(239,68,68,0.4);">Fan Challenge & Movement</div>
+        <h2 style="font-size:clamp(26px, 5vw, 42px);font-weight:900;font-style:italic;text-transform:uppercase;margin:12px 0;letter-spacing:-0.02em;color:#fff;">
+          "From Ungrateful To Grateful"
+        </h2>
+        <p style="color:#cbd5e1;font-size:14px;line-height:1.7;max-width:580px;margin-bottom:24px;">
+          Show your grind, your glow-up, or how you overcame doubters and fake friends using 2Cold's official audio. 
+          Tag <strong>#UngratefulChallenge</strong> and <strong>#MoneyMission</strong> on TikTok & Instagram Reels.
+          <br><br>
+          <span style="color:var(--lime);font-weight:700;">🔥 2Cold is personally reposting the hardest weekly fan cuts on his official pages!</span>
+        </p>
+
+        <div class="challenge-actions">
+          <a href="https://tiktok.com/@2coldofficalpage" target="_blank" class="btn-challenge-primary">
+            <span>🎵</span> Use Audio on TikTok
+          </a>
+          <a href="https://instagram.com/2coldofficialpage" target="_blank" class="btn-challenge-secondary">
+            <span>📸</span> Use Audio on IG Reels
+          </a>
+        </div>
+      </div>
+      <div class="challenge-asset-visual">
+        <img src="/story_9x16.jpg" alt="Ungrateful Challenge Visual">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================
+       EXECUTIVE VIDEO VAULT & THEATER PLAYER
+       ========================================================== -->
+  <section class="section-wrap" id="videos" style="padding-top: 0;">
+    <div class="section-header-block">
+      <div class="section-tag">Visual Experience</div>
+      <h2 class="section-main-title">Official Video Vault</h2>
+      <p class="section-desc">
+        Switch between the full 16:9 music video stream, the raw studio session teaser, and the highway lyric visualizer.
+      </p>
+    </div>
+
+    <!-- MASTER THEATER PLAYER WITH INTEGRATED TABS -->
+    <div class="video-theater-wrapper">
+      <div class="theater-header-bar">
+        <div class="theater-status-tag">
+          <span class="pulse-dot"></span>
+          <span id="theaterCurrentTitle">2COLD - UNGRATEFUL (OFFICIAL MUSIC VIDEO)</span>
+        </div>
+        <div class="theater-tab-group">
+          <button class="theater-tab-btn active" onclick="switchTheaterTab('youtube')">▶ Music Video</button>
+          <button class="theater-tab-btn" onclick="switchTheaterTab('teaser')">🎬 Official Teaser</button>
+          <button class="theater-tab-btn" onclick="switchTheaterTab('highway')">⚡ Lyric Visualizer</button>
+        </div>
+      </div>
+
+      <div class="theater-stage-container">
+        <!-- PANE 1: YOUTUBE OFFICIAL MUSIC VIDEO -->
+        <div class="theater-view-pane active" id="theaterPaneYouTube">
+          <iframe id="ytIframe" src="https://www.youtube-nocookie.com/embed/1tnm59_OUBw?enablejsapi=1" title="2Cold - Ungrateful (Official Music Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- PANE 2: OFFICIAL TEASER (CORRECTLY SIZED TO 16:9 THEATER WITH CINEMATIC BACKDROP) -->
+        <div class="theater-view-pane" id="theaterPaneTeaser">
+          <video id="teaserTheaterVideo" src="/lyric_teaser.mp4" controls playsinline poster="/teaser_theater_16x9.jpg"></video>
+        </div>
+
+        <!-- PANE 3: HIGHWAY LYRIC FLASH CANVAS -->
+        <div class="theater-view-pane" id="theaterPaneHighway">
+          <video id="highwayTheaterVideo" src="/ambient_highway.mp4" controls playsinline poster="/canvas_cover_9x16.jpg"></video>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9:16 VERTICAL REELS & TEASERS VAULT -->
+    <div class="reels-section-title">
+      <span>▶</span> 9:16 Vertical Video Vault & Campaign Teasers
+    </div>
+
+    <div class="reels-grid">
+      <!-- REEL 1: LYRIC TEASER (PIXEL-PERFECT 9:16 SIZED COVER) -->
+      <div class="reel-card">
+        <div class="reel-media-wrap">
+          <span class="reel-badge-overlay">Official Teaser</span>
+          <video src="/lyric_teaser.mp4" controls playsinline poster="/teaser_cover_9x16.jpg"></video>
+        </div>
+        <div class="reel-info-bar">
+          <div>
+            <div class="reel-title">"Ungrateful" Official Teaser</div>
+            <div class="reel-desc">Studio session cut at the Neumann mic in Palm Angels track gear with full kinetic typography.</div>
+          </div>
+          <a href="https://www.instagram.com/2coldofficialpage" target="_blank" class="reel-action-btn">Share on Instagram</a>
+        </div>
+      </div>
+
+      <!-- REEL 2: HIGHWAY LYRIC FLASH CANVAS (PIXEL-PERFECT 9:16 COVER) -->
+      <div class="reel-card">
+        <div class="reel-media-wrap">
+          <span class="reel-badge-overlay" style="color:var(--lime);border-color:rgba(163,230,53,0.4);">Lyric Canvas</span>
+          <video src="/ambient_highway.mp4" controls playsinline poster="/canvas_cover_9x16.jpg"></video>
+        </div>
+        <div class="reel-info-bar">
+          <div>
+            <div class="reel-title">Midnight Highway Lyric Canvas</div>
+            <div class="reel-desc">Cinematic midnight highway visualizer featuring glowing kinetic lyrics and 2Cold's full vocal master.</div>
+          </div>
+          <a href="https://open.spotify.com/search/2Cold%20Ungrateful" target="_blank" class="reel-action-btn">Play on Spotify</a>
+        </div>
+      </div>
+
+      <!-- REEL 3: STORY FLYER / ASSET KIT -->
+      <div class="reel-card">
+        <div class="reel-media-wrap">
+          <span class="reel-badge-overlay" style="color:var(--lime);border-color:rgba(163,230,53,0.4);">Story Asset</span>
+          <img src="/story_9x16.jpg" alt="2Cold Ungrateful Story Poster">
+        </div>
+        <div class="reel-info-bar">
+          <div>
+            <div class="reel-title">9:16 Campaign Poster</div>
+            <div class="reel-desc">Full-resolution Instagram Story & TikTok promotional flyer featuring the Dodge Charger and train tracks.</div>
+          </div>
+          <a href="/story_9x16.jpg" target="_blank" download class="reel-action-btn">Download Story Asset</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOUR DATES SECTION -->
+  <section class="section-wrap" id="tour" style="padding-top: 0;">
+    <div class="section-header-block">
+      <div class="section-tag">Live Appearances</div>
+      <h2 class="section-main-title">Tour Dates & Shows</h2>
+      <p class="section-desc">Official regional routing across the key growth corridors. RSVP to secure street team access and ticket alerts.</p>
+    </div>
+
+    <div class="tour-table">
+      <div class="tour-row">
+        <div class="tour-date">TARGET MARKET 01</div>
+        <div class="tour-city">LITTLE ROCK / CONWAY, AR</div>
+        <div class="tour-venue">Home Turf Blitz // Regional Push</div>
+        <a href="#vip-club" class="btn-ticket">Join Street Team</a>
+      </div>
+      <div class="tour-row">
+        <div class="tour-date">TARGET MARKET 02</div>
+        <div class="tour-city">ATLANTA, GA</div>
+        <div class="tour-venue">Trap Capital // Center Stage Takeover</div>
+        <a href="#vip-club" class="btn-ticket">Join Street Team</a>
+      </div>
+      <div class="tour-row">
+        <div class="tour-date">TARGET MARKET 03</div>
+        <div class="tour-city">DALLAS / HOUSTON, TX</div>
+        <div class="tour-venue">Dallas Vlog Pt. 2 // Nightlife Run</div>
+        <a href="#vip-club" class="btn-ticket">Join Street Team</a>
+      </div>
+      <div class="tour-row">
+        <div class="tour-date">TARGET MARKET 04</div>
+        <div class="tour-city">MEMPHIS, TN</div>
+        <div class="tour-venue">Mid-South Hub // Street Radio Campaign</div>
+        <a href="#vip-club" class="btn-ticket">Join Street Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MERCHANDISE SECTION (FIXED PRICES) -->
+  <section class="section-wrap" id="merch" style="padding-top: 0;">
+    <div class="section-header-block">
+      <div class="section-tag">Official Apparel</div>
+      <h2 class="section-main-title">Official Store</h2>
+    </div>
+
+    <div class="merch-grid">
+      <div class="merch-card">
+        <div>
+          <div class="merch-image-box" style="background:#0d120a;">
+            <img src="/logo_money_mission.png" alt="MMM Tour Tee Graphic">
+          </div>
+          <div class="merch-title">MMM "Money Mission Military" Tour Tee</div>
+          <div class="merch-price">$45.00 USD</div>
+        </div>
+        <a href="#booking" class="btn-buy-merch">Pre-Order Now</a>
+      </div>
+
+      <div class="merch-card">
+        <div>
+          <div class="merch-image-box" style="background:#080b10;">
+            <img src="/logo_money_mission.png" alt="MMM Tactical Hoodie Graphic">
+          </div>
+          <div class="merch-title">MMM Tank 500GSM Tactical Hoodie</div>
+          <div class="merch-price">$85.00 USD</div>
+        </div>
+        <a href="#booking" class="btn-buy-merch">Pre-Order Now</a>
+      </div>
+
+      <div class="merch-card">
+        <div>
+          <div class="merch-image-box" style="background:#120e0a;">
+            <img src="/logo_money_mission.png" alt="MMM Trucker Cap Graphic">
+          </div>
+          <div class="merch-title">MMM Firing Tank Foam Trucker Cap</div>
+          <div class="merch-price">$35.00 USD</div>
+        </div>
+        <a href="#booking" class="btn-buy-merch">Pre-Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFICIAL BOOKING & INDUSTRY DESK (FIXED BUDGET LABELS) -->
+  <section class="section-wrap" id="booking" style="padding-top: 0;">
+    <div class="section-header-block">
+      <div class="section-tag">Direct Inquiries</div>
+      <h2 class="section-main-title">Concert & Press Booking</h2>
+    </div>
+
+    <div class="booking-desk">
+      <form onsubmit="event.preventDefault(); alert('Booking request sent directly to 2Cold management!');">
+        <div class="booking-grid">
+          <div class="booking-group">
+            <label class="field-label">Promoter / Contact Name</label>
+            <input type="text" class="field-input" placeholder="Name or Promotion Co." required>
+          </div>
+          <div class="booking-group">
+            <label class="field-label">Direct Email Address</label>
+            <input type="email" class="field-input" placeholder="email@domain.com" required>
+          </div>
+          <div class="booking-group">
+            <label class="field-label">Inquiry Type</label>
+            <select class="field-select">
+              <option>Live Concert / Club Performance</option>
+              <option>Festival Stage Booking</option>
+              <option>Guest Feature / Studio Verse</option>
+              <option>Music Video Cameo</option>
+              <option>Press / Media / Interview</option>
+            </select>
+          </div>
+          <div class="booking-group">
+            <label class="field-label">Offer / Budget ($ USD)</label>
+            <input type="text" class="field-input" placeholder="e.g. $7,500 USD">
+          </div>
+          <div class="booking-group span-2">
+            <label class="field-label">Date, Venue & Performance Details</label>
+            <textarea class="field-area" rows="4" placeholder="Include target date, city, venue name, expected attendance, and set length..."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn-submit-inquiry">Submit Official Booking Offer</button>
+      </form>
+    </div>
+
+    <!-- VIP FAN SUBSCRIBE -->
+    <div class="vip-subscribe-box" id="vip-club">
+      <div class="section-tag">JOIN THE 2COLD INNER CIRCLE</div>
+      <h3 style="font-size:clamp(22px, 4vw, 28px);font-weight:900;font-style:italic;text-transform:uppercase;">Get Leaks, Tour Presales & Merch First</h3>
+      <form class="vip-form" onsubmit="event.preventDefault(); alert('Subscribed to VIP list!');">
+        <input type="email" class="vip-input" placeholder="Enter your email address" required>
+        <button type="submit" class="vip-btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 2COLD // MONEY MISSION MILITARY RECORDS · ALL RIGHTS RESERVED.<br>
+    DIGITAL ARCHITECTURE & EXECUTIVE CURATION BY <a href="https://smallcircle.world" target="_blank">SMALL CIRCLE STUDIO</a>
+  </footer>
+
+  <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+  <script>
+    // Lyric Card Quotables
+    const lyricQuotes = [
+      "Gave this ungrateful ass nigga half my plate, still got his hands out.",
+      "This rap shit just a hobby, I'm a hustler I bet I figure it out.",
+      "Lonely nights just me, my pen and paper plotting the plan out.",
+      "Ain't fucked up bout no beef, like a vegetarian I'm straight.",
+      "He brainwashed tryna be tough, but he still ain't got no money."
+    ];
+
+    let currentQuoteIndex = 0;
+
+    function selectLyricQuote(index) {
+      currentQuoteIndex = index;
+      const buttons = document.querySelectorAll('.lyric-quote-btn');
+      buttons.forEach((btn, i) => {
+        if (i === index) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+
+      const preview = document.getElementById('previewQuoteText');
+      if (preview) {
+        preview.textContent = '"' + lyricQuotes[index] + '"';
+      }
+    }
+
+    function downloadCurrentLyricCard() {
+      const quote = lyricQuotes[currentQuoteIndex];
+      const canvas = document.createElement('canvas');
+      canvas.width = 1080;
+      canvas.height = 1920;
+      const ctx = canvas.getContext('2d');
+
+      // Sleek dark gradient background
+      const grad = ctx.createLinearGradient(0, 0, 0, 1920);
+      grad.addColorStop(0, '#04070a');
+      grad.addColorStop(0.5, '#0b1219');
+      grad.addColorStop(1, '#020407');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, 1080, 1920);
+
+      // Neon cyan border frame
+      ctx.strokeStyle = 'rgba(0, 229, 255, 0.4)';
+      ctx.lineWidth = 4;
+      ctx.strokeRect(60, 60, 960, 1800);
+
+      // Subtle tactical grid accent lines
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+      ctx.lineWidth = 1;
+      for (let y = 200; y < 1800; y += 160) {
+        ctx.beginPath();
+        ctx.moveTo(60, y);
+        ctx.lineTo(1020, y);
+        ctx.stroke();
+      }
+
+      // Top Label Branding
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#a3e635';
+      ctx.font = '800 24px "JetBrains Mono", monospace';
+      ctx.letterSpacing = '6px';
+      ctx.fillText('MONEY MISSION MILITARY', 540, 240);
+
+      // Track Subtitle
+      ctx.fillStyle = '#ffffff';
+      ctx.font = '900 32px Montserrat, sans-serif';
+      ctx.letterSpacing = '3px';
+      ctx.fillText('2COLD  •  "UNGRATEFUL"', 540, 310);
+
+      // Glowing quotation mark
+      ctx.fillStyle = '#00e5ff';
+      ctx.font = '900 160px Montserrat, sans-serif';
+      ctx.fillText('“', 540, 680);
+
+      // Lyric Quote Text (with auto wrap)
+      ctx.fillStyle = '#ffffff';
+      ctx.font = 'italic 800 52px Montserrat, sans-serif';
+      const words = quote.split(' ');
+      let line = '';
+      let y = 840;
+      const maxWidth = 820;
+      const lineHeight = 76;
+
+      for (let n = 0; n < words.length; n++) {
+        const testLine = line + words[n] + ' ';
+        const metrics = ctx.measureText(testLine);
+        if (metrics.width > maxWidth && n > 0) {
+          ctx.fillText(line.trim(), 540, y);
+          line = words[n] + ' ';
+          y += lineHeight;
+        } else {
+          line = testLine;
+        }
+      }
+      ctx.fillText(line.trim(), 540, y);
+
+      // Bottom Branding Tag
+      ctx.fillStyle = '#00e5ff';
+      ctx.font = '800 24px "JetBrains Mono", monospace';
+      ctx.letterSpacing = '5px';
+      ctx.fillText('STREAM "UNGRATEFUL" OUT NOW ON ALL DSPs', 540, 1680);
+
+      // Trigger automatic high-res PNG download
+      const link = document.createElement('a');
+      link.download = '2Cold-Ungrateful-Bar-' + (currentQuoteIndex + 1) + '.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }
+
+    // Master Theater Tab Switcher
+    function switchTheaterTab(tab) {
+      const tabs = document.querySelectorAll('.theater-tab-btn');
+      tabs.forEach(t => t.classList.remove('active'));
+
+      const panes = document.querySelectorAll('.theater-view-pane');
+      panes.forEach(p => p.classList.remove('active'));
+
+      // Pause videos when switching tabs
+      const teaserVideo = document.getElementById('teaserTheaterVideo');
+      const highwayVideo = document.getElementById('highwayTheaterVideo');
+      if (teaserVideo) teaserVideo.pause();
+      if (highwayVideo) highwayVideo.pause();
+
+      const titleEl = document.getElementById('theaterCurrentTitle');
+
+      if (tab === 'youtube') {
+        tabs[0].classList.add('active');
+        document.getElementById('theaterPaneYouTube').classList.add('active');
+        if (titleEl) titleEl.textContent = '2COLD - UNGRATEFUL (OFFICIAL MUSIC VIDEO)';
+      } else if (tab === 'teaser') {
+        tabs[1].classList.add('active');
+        document.getElementById('theaterPaneTeaser').classList.add('active');
+        if (titleEl) titleEl.textContent = '2COLD - UNGRATEFUL (OFFICIAL CAMPAIGN TEASER)';
+      } else if (tab === 'highway') {
+        tabs[2].classList.add('active');
+        document.getElementById('theaterPaneHighway').classList.add('active');
+        if (titleEl) titleEl.textContent = '2COLD - UNGRATEFUL (MIDNIGHT HIGHWAY VISUALIZER)';
+      }
+    }
+  </script>
+</body>
+</html>
