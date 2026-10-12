@@ -79,6 +79,11 @@ export default {
       return env.ASSETS.fetch(new Request(new URL('/index.html', request.url)));
     }
 
+    // Admin & Dashboard route rewrite
+    if (url.pathname === '/admin' || url.pathname === '/dashboard') {
+      return env.ASSETS.fetch(new Request(new URL('/admin.html', request.url)));
+    }
+
     // Pass through to static assets
     return env.ASSETS.fetch(request);
   }
