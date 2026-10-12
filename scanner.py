@@ -10,7 +10,7 @@ import ssl
 import json
 import re
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timezone
 
 PORTAL_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(PORTAL_DIR, "public", "data")
@@ -72,7 +72,7 @@ def load_existing_metrics():
     return None
 
 def main():
-    timestamp = datetime.utcnow().isoformat() + "Z"
+    timestamp = datetime.now(timezone.utc).isoformat()
     existing = load_existing_metrics() or {}
     
     yt_data = scan_youtube()
