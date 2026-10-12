@@ -1,0 +1,47 @@
+{
+  "artist": "2Cold",
+  "single": "Ungrateful",
+  "label": "Money Mission Military Records (C-Corp)",
+  "lastScannedAt": "2026-10-12T15:34:45.677769Z",
+  "goal": 50000,
+  "totalStreams": 1732,
+  "progressPercent": 3.46,
+  "status": "LIVE SCANNER ACTIVE",
+  "youtube": {
+    "videoId": "1tnm59_OUBw",
+    "title": "2Cold -  Ungrateful",
+    "views": 66,
+    "url": "https://www.youtube.com/watch?v=1tnm59_OUBw"
+  },
+  "dspClicks": {
+    "Apple Music": 142,
+    "Spotify": 188,
+    "YouTube Music": 86,
+    "Official YouTube": 66,
+    "Instagram": 95,
+    "TikTok": 64
+  },
+  "milestones": [
+    {
+      "id": 1,
+      "label": "Planted Worldwide (Single Release)",
+      "goal": 1000,
+      "unlocked": true,
+      "unlockedAt": "2026-09-30"
+    },
+    {
+      "id": 2,
+      "label": "Money Mission Vault: Unreleased Studio Track & Visual",
+      "goal": 50000,
+      "unlocked": false,
+      "currentProgress": 1732
+    },
+    {
+      "id": 3,
+      "label": "The Harvest Worldwide: Multi-City Tour Dates",
+      "goal": 250000,
+      "unlocked": false,
+      "currentProgress": 1732
+    }
+  ]
+}

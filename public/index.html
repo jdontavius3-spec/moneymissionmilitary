@@ -745,6 +745,81 @@
       padding-top: 10px;
     }
 
+    /* Live Milestone Radar Bar */
+    .radar-telemetry-container {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(0, 229, 255, 0.35);
+      box-shadow: 0 0 30px rgba(0, 229, 255, 0.12);
+      border-radius: 12px;
+      padding: 18px 24px;
+      margin: 0 auto 35px auto;
+      max-width: 900px;
+    }
+    .radar-telemetry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .radar-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--lime);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.08em;
+    }
+    .pulse-radar-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--lime);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--lime);
+      animation: pulseDot 1.4s infinite;
+      display: inline-block;
+    }
+    @keyframes pulseDot {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.4; }
+    }
+    .radar-stream-tally {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 14px;
+      font-weight: 800;
+      color: #fff;
+    }
+    .radar-stream-tally span.highlight {
+      color: var(--cyan);
+    }
+    .radar-track-bar-bg {
+      width: 100%;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 6px;
+      overflow: hidden;
+      position: relative;
+    }
+    .radar-track-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #00e5ff 0%, #a3e635 100%);
+      box-shadow: 0 0 12px rgba(0, 229, 255, 0.6);
+      border-radius: 6px;
+      transition: width 1s ease-in-out;
+    }
+    .radar-telemetry-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: #94a3b8;
+    }
+
     /* ==========================================================
        INTERACTIVE LYRIC CARDS ENGINE (#lyric-cards)
        ========================================================== */
@@ -1728,6 +1803,25 @@
       </p>
     </div>
 
+    <!-- LIVE STREAMING MILESTONE RADAR CONSOLE -->
+    <div class="radar-telemetry-container">
+      <div class="radar-telemetry-header">
+        <div class="radar-badge" id="liveScannerBadge">
+          <span class="pulse-radar-dot"></span> LIVE SCANNER ACTIVE • SYNCHRONIZED
+        </div>
+        <div class="radar-stream-tally">
+          <span id="liveStreamCounter" class="highlight">1,732</span> / <span id="liveGoalCounter">50,000</span> VERIFIED STREAMS
+        </div>
+      </div>
+      <div class="radar-track-bar-bg">
+        <div class="radar-track-bar-fill" id="liveProgressBar" style="width: 3.5%;"></div>
+      </div>
+      <div class="radar-telemetry-footer">
+        <div>MILESTONE UNLOCK AT 50K: UNRELEASED TRACK & DALLAS VLOG</div>
+        <div>PROGRESS: <span id="liveProgressPercent" style="color:var(--lime);font-weight:800;">3.5%</span></div>
+      </div>
+    </div>
+
     <div class="roadmap-track">
       <!-- STAGE 01: THE SEED -->
       <div class="roadmap-card active">
@@ -2216,5 +2310,7 @@
       }
     }
   </script>
+  <!-- MONEY MISSION MILITARY INTELLIGENCE & DSP TRACKER -->
+  <script src="/tracker.js"></script>
 </body>
 </html>
